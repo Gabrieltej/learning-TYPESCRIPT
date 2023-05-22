@@ -267,17 +267,37 @@ form?.addEventListener('submit', (e: Event) => {
   //valueAsNumber will bring the stuff out as a number and not just like a string
 })
 
-let user: [number, string, boolean] //tuples
+
+//TUPLES--tuples are just like arrays in which the type of data is fixed in a tuple when it is being initialized
+let arr=['ryu', 25, true]
+arr[1]=false
+arr[0]='frying'
+
+//all of the above is a regular array and all of them can be changed, and any position in the array can take in items of any type
+
+
+
+
+
+let user: [number, string, boolean] 
 user = [1, 'food', false]
 
-let dev: [number, string, boolean] = [1, 'food', false] //can be written like this also
+let dev: [number, string, boolean] = [1, 'food', false] 
+
+
+dev[1]=90 //error because  item at index 1 is expected to be a string. 
+
+
+
 
 //TUPLES ARE LIKE ARRAYS THAT WE CAN MAP THROUGH ALSO
 user.map((indi) => {
   console.log(indi)
 })
 
-//ENUMS--lists of related constants
+
+
+//ENUMS--lists of related constants and allows us to associate them with a numeric value
 const small = 1
 const medium = 2
 const large = 3
